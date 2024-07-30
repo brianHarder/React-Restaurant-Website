@@ -12,12 +12,7 @@ function BookingPage() {
   });
 
   const onSubmit = (data) => {
-    console.log(data);
-
-    // Display a confirmation alert
     alert(`Reservation confirmed for ${data.name} on ${data.date} at ${data.time}.`);
-
-    // Clear the form after submission
     reset();
   };
 
