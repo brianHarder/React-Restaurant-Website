@@ -7,7 +7,9 @@ import Hero from './components/Hero';
 import Specials from './components/Specials';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
-import Reservations from './components/Reservations';
+import BookingPage from './components/BookingPage';
+import About from './components/About';
+import Menu from './components/Menu';
 
 function App() {
   return (
@@ -23,7 +25,9 @@ function App() {
                 <Testimonials />
               </>
             }></Route>
-            <Route path="/reservations" element={<Reservations />}></Route>
+            <Route path="/reservations" element={<BookingPage />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/menu" element={<Menu />}></Route>
           </Routes>
         </main>
         <Footer />

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -28,10 +29,10 @@ function Footer() {
       <div className="links">
         <h3>Little Lemon</h3>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Menu</li>
-          <li>Reservations</li>
+          <li><Link to="/" className="nav-link">Home</Link></li>
+          <li><Link to="/about" className="nav-link">About</Link></li>
+          <li><Link to="/menu" className="nav-link">Menu</Link></li>
+          <li><Link to="/reservations" className="nav-link">Reservations</Link></li>
         </ul>
       </div>
       <div className="contact">
